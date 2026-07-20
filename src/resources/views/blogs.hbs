@@ -1,0 +1,19 @@
+
+
+<h1 class="title-blog">
+    {{title_blog}}
+</h1>
+
+{{#if blogs.length}}
+<ul>
+    {{#each blogs}}
+    <li>
+        {{this.title}} - {{this.content}}
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+<p class="empty-blogs">
+    Not blogs
+</p>
+{{/if}}
